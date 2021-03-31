@@ -7,7 +7,7 @@ package ac.za.cput.tdd.assignment1;
 
 /**
  *
- * @author Duncan Harris - (220110530)
+ * @author Duncan Harris -(220110530)
  */
 
 public class CalculatorApp
