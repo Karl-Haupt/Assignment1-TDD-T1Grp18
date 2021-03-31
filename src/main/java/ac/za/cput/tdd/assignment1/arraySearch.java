@@ -70,7 +70,7 @@ public class arraySearch {
     
     for(int i = 0; i < array.length; i++){
         
-        if(max < array[0]){
+        if(max < array[i]){
             
             max = array[i];
             
