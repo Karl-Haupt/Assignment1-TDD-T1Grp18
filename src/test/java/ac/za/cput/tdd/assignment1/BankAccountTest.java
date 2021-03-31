@@ -11,8 +11,8 @@ package ac.za.cput.tdd.assignment1;
 
 import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
@@ -44,7 +44,8 @@ public class BankAccountTest {
     //Failing Test
     @Test
     public void testFailWithdraw() {
-        fail("Widthraw is less than zero");
+        int amountWithdraw = 120;
+        assertSame(amountWithdraw, 100);
     }
     
     //Timeouts test
@@ -55,9 +56,9 @@ public class BankAccountTest {
     }
     
     //Disabling Test
-    @Ignore
     @Test
-    public void IgnoreTest() {
+    @Disabled("Disabled - Method needs refactoring")
+    public void TestPreviousTransaction() {
         assertSame(bankAcc1, bankAcc3);
     }
     

@@ -38,14 +38,12 @@ public class BankAccount {
         }
   }
     
- public void withdraw(int amount) {
-     if(amount >= 0) {
-         throw new RuntimeException("Sorry, not enough funds");
-     }
+ public int withdraw(int amount) {
      if(amount != 0) {
      balance = balance - amount;
      previousTransaction = amount;
      }
+     return amount;
  } 
 
     public void getPreviousTransaction() {
