@@ -27,7 +27,7 @@ public class CalculatorAppTest
         System.out.println("Add");
         int a = 1;
         int b = 1;
-        NewClass instance = new NewClass();
+        CalculatorApp instance = new CalculatorApp();
         int expResult = 2;
         int result = instance.Add(a, b);
         assertEquals(expResult, result);
@@ -40,7 +40,7 @@ public class CalculatorAppTest
         System.out.println("Subtract");
         int a = 2;
         int b = 1;
-        NewClass instance = new NewClass();
+        CalculatorApp instance = new CalculatorApp();
         int expResult = 4;
         int result = instance.Subtract(a, b);
         assertEquals(expResult, result);
@@ -54,7 +54,7 @@ public class CalculatorAppTest
         System.out.println("Multiply");
         double a = 2.0;
         double b = 2.0;
-        NewClass instance = new NewClass();
+        CalculatorApp instance = new CalculatorApp();
         double expResult = 8.0;
         double result = instance.Multiply(a, b);
         assertEquals(expResult, result, 0.0);
@@ -63,16 +63,16 @@ public class CalculatorAppTest
     }
 
     @Test
-    @ignore
+    @Disabled("Disabled until further notice")
     public void testDivide() {
         System.out.println("Divide");
         double a = 4.0;
         double b = 2.0;
-        NewClass instance = new NewClass();
+        CalculatorApp instance = new CalculatorApp();
         double expResult = 2.0;
         double result = instance.Divide(a, b);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
+        
         fail("Method should display the what happens when two variables divide amongst themselves");
     }
 }
